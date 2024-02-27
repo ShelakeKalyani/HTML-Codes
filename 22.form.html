@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Tag</title>
+</head>
+<body>
+   <form action="save.html" method="post" enctype="multipart/form-data">
+	 <fieldset style="background-color:pink">
+	 	<legend>Personal Info </legend>
+	 	<label>Name :- </label>
+	 	<input type="text" name="sname" placeholder="Enter your name" value="Kalyani" autocomplete="off" required><br/><br/>
+	 	<label>Email</label>
+	 	<input type="email" name="mail" placeholder="Enter your Email" value="Kallu12@gmail.com" readonly disabled><br/><br/>
+	 	<label>Mobile</label>
+	 	<input type="text" name="number" placeholder="Enter your mobile number" autofocus maxlength="12" minlength="10" required><br/><br/>
+	 	<label>Gender:</label>
+	 	<input type="radio" name="gender"><b>Male</b>
+	 	<input type="radio" name="gender" checked><b>Female</b><br/><br/>
+	 	<label>Photo</label>
+	 	<input type="file" name="photo"><br/><br/>
+
+	 	<!--yyyy-mm-dd-->
+	 	<label>DOB:</label>
+	 	<input type="date" name="dob" max="2022-07-25" min="2022-07-23"><br><br> 
+
+
+	 	<!-- <label>Submit</label>
+	 	<input type="submit"> -->
+	 </fieldset>
+
+	 <fieldset style="background-color:lightblue;">
+	 	<legend>Contact detail & Education information</legend>
+	 	<label>State:-</label>
+	 	<select name="state" value="Maharashtra"> 
+	 		<option>Choose</option>
+	 		<option selected>Maharashtra</option>
+	 		<option>Gujarat</option>
+	 		<option>Karnataka</option>
+	 		<option>Telangana</option>
+	 		<option>Goa</option>
+	 	</select><br/><br/>
+	 	<label>City:</label>
+	 	<input type="text" name="city" placeholder="Enter your city" value="Ahmednagar"><br/><br/>
+	 	<label>Address:</label>
+	 	<textarea name="address" placeholder="Enter your address" value="Ahmednagar" rows="10" cols="30"></textarea><br/><br/>
+	 	<label>Pincode:</label>
+	 	<input type="number" name="pin" placeholder="Enter your pincode" value="998877772"><br/><br/>
+	 	<label>Department:</label>
+	 	<select name="Department">
+	 		<option>Choose</option>
+	 		<option>Math</option>
+	 		<option>Comp</option>
+	 		<option>Elc</option>
+	 	</select><br/><br/>
+
+	 	<label>Subject</label>
+	 	<input type="checkbox" name="sub1"><b>Python</b>
+	 	<input type="checkbox" name="sub2"><b>Java</b>
+	 	<input type="checkbox" name="sub3"><b>Block Chain</b>
+	 	<input type="checkbox" name="sub4"><b>OS</b>
+	 </fieldset>
+
+	 <fieldset style="background-color:lightgray;">
+	 	<legend>Login Form</legend>
+	 	<label>Username</label>
+	 	<input type="text" name="Username" placeholder="Enter your Username"><br/><br/>
+	 	<label>Password:-</label>
+	 	<input type="password" name="pass" placeholder="Enter your password">
+
+	 </fieldset>
+
+
+	 <input type="reset">
+	 <input type="submit"><br/><br/>
+
+	 <button type="reset">Empty</button>
+	 <button type="submit" formaction="form.html">Save</button>
+ </form>
+</body>
+</html>
